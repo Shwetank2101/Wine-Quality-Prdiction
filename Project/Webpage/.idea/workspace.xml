@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="651a37e1-b839-4f44-ab45-21047a47f26c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mysite/firstpage/static/images/Srishti.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mysite" />
+  </component>
+  <component name="ProjectId" id="1eEkj548VPcV2jPXaEaDr0ybEjR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysite/firstpage/static" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shivam\Desktop\Webpage\mysite\firstpage\static" />
+      <recent name="C:\Users\Shivam\Desktop\Webpage\mysite\models" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="651a37e1-b839-4f44-ab45-21047a47f26c" name="Default Changelist" comment="" />
+      <created>1593894271265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593894271265</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="409" y="168" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593950464630">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1593950464630" />
+    <state x="343" y="122" key="FileChooserDialogImpl" timestamp="1593938944180">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="343" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593938944180" />
+    <state x="64" y="10" key="SettingsEditor" timestamp="1593903402877">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="64" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593903402877" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1594106959013">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594106959013" />
+    <state x="687" y="49" key="search.everywhere.popup" timestamp="1593904344647">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="687" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593904344647" />
+  </component>
+</project>
