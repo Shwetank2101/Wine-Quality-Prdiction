@@ -36,4 +36,6 @@ def Prediction(request):
     context={'scoreval':scoreval}
     return render(request,'index.html',context)
 
+def handler404(request,*args,**argv):
+    return render(request,'404.html')
 
