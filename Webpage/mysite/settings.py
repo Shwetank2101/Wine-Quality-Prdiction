@@ -25,7 +25,7 @@ SECRET_KEY = 'npc23a636*^p5a#f_wp*k!p=l8@(5^wj0y1f(zlrbpy*%#c8f+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
