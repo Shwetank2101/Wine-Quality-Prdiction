@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>DA-ML</title>
+    
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">The BRAINIAC</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                         <li><a href="#home" class="smoothScroll">Home</a></li>
+                         <li><a href="#feature" class="smoothScroll">Features</a></li>
+                         <li><a href="#about" class="smoothScroll">About us</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li ><a href="https://www.quora.com/profile/Shwetank-Dixit-4">Connect us on - <span style="color:red;">Quora</span></a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- FEATURE -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h3>Welccome to The BRIANIAC</h3>
+                              <h1>We will help you to guess Wine Quality!</h1>
+                             
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FEATURE -->
+    {% block content%}
+     <section id="feature" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h1>WINE QUALITY PREDICTION</h1>
+                         </div>
+                    
+
+    <form method="post" enctype="multipart/form-data" action="Prediction">
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">Alcohol:</label> </div> <input name="alcohol" type="text" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Chlorides:</label> </div> <input type="text" id="lname" name="chlorides" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="fname">Citric acid:</label> </div> <input type="text" id="fname" name="citric_acid" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Density:</label> </div> <input type="text" id="lname" name="density" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="fname">Fixed acidity:</label></div>  <input type="text" id="fname" name="fixed_acidity" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Free sulfur dioxide:</label> </div> <input type="text" id="lname" name="free_sulfur_dioxide" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">pH:</label> </div> <input type="text" id="lname" name="pH" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Residual sugar:</label> </div> <input type="text" id="lname" name="residual_sugar" value=><br><br>
+        
+  <div class="col-md-4 col-sm-4"><label for="lname">Sulphates:</label> </div> <input type="text" id="lname" name="sulphates" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Total sulfur dioxide:</label> </div> <input type="text" id="lname" name="total_sulfur_dioxide" value=><br><br>
+        
+ <div class="col-md-4 col-sm-4"><label for="lname">Volatile acidity:</label> </div> <input type="text" id="lname" name="volatile_acidity" value=><br><br>
+        
+        
+ <br>
+{%  if scoreval  %}
+ <h1>Wine is of <span style="color:red;">{{scoreval}}</span> Quality</h1>
+ {% else%}
+ <input type="submit" value="Submit" ></div>
+ {% endif %}
+    
+{% endblock %}
+
+
+</form>
+                  
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="section-title">
+                              <h1>Professional Team for you</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb">
+                              <img src="{% static "images/Shwetank.jpg" %}" class="img-responsive" alt="Shwetank Dixit">
+                              <div class="team-info team-thumb-up">
+                                   <h2>Shwetank DIxit</h2>
+                                   <small>Project Head/CEO/Founder</small>
+                                   <p>I am 20 year young and energetic student who want to make his country proud</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb">
+                              <img src="{% static "images/Srishti.jpg" %}" class="img-responsive" alt="Srishti Rastogi">
+                              <div class="team-info team-thumb-up">
+                                   <h2>Srishti Rastogi</h2>
+                                   <small>Vice President</small>
+                                   <p>I am a hardworking, focused and determined individual who wishes to achieve happiness and success in life</p>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     
+
+
+     <!-- CONTACT -->
+     <section id="contact" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                         <form id="contact-form" role="form" action="" method="post">
+                              <div class="section-title">
+                                   <h1>Say hello to us</h1>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="text" class="form-control" placeholder="Full name" name="name" required>
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="email" class="form-control" placeholder="Email address" name="email" required>
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="submit" class="form-control" name="send message" value="Send Message">
+                              </div>
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="8" placeholder="Your message" name="message" required></textarea>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>       
+
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="copyright-text col-md-12 col-sm-12">
+                         <div class="col-md-6 col-sm-6">
+                              <p>Copyright &copy; 2020 Company Name - The BRAINIAC</p>
+                         </div>
+
+                         <div class="col-md-6 col-sm-6">
+                              <ul class="social-icon">
+                                   <li><a href="https://twitter.com/ShwetankDixit1" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://www.instagram.com/shwetankdixit_/?hl=en" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="{% static "js/jquery.js" %}"></script>
+     <script src="{% static "js/bootstrap.min.js" %}"></script>
+     <script src="{% static "js/jquery.stellar.min.js" %}"></script>
+     <script src="{% static "js/owl.carousel.min.js" %}"></script>
+     <script src="{% static "js/smoothscroll.js" %}"></script>
+     <script src="{% static "js/custom.js" %}"></script>
+
+
+
+</body>
+</html>
