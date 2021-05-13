@@ -1,5 +1,5 @@
 # Wine Quality Prediction
-![Image](static\images\wine.jpg)
+![Image](https://github.com/Shwetank2101/Wine-Quality-Prdiction/blob/master/static/images/wine.jpg)
 
 Our main objective is to predict the wine quality using machine learning through Python programming language.
 A large dataset is considered and wine quality is modelled to analyse the quality of wine through different parameters like fixed acidity, volatile acidity etc. 
