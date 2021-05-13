@@ -98,34 +98,34 @@
 
     <form method="post" enctype="multipart/form-data" action="Prediction">
  {% csrf_token %}
- <div class="col-md-4 col-sm-4"><label for="fname">Alcohol:</label> </div> <input name="alcohol" type="text" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Alcohol:</label> </div> <input name="alcohol" type="text" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Chlorides:</label> </div> <input type="text" id="lname" name="chlorides" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Chlorides:</label> </div> <input type="text" id="lname" name="chlorides" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="fname">Citric acid:</label> </div> <input type="text" id="fname" name="citric_acid" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Citric acid:</label> </div> <input type="text" id="fname" name="citric_acid" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Density:</label> </div> <input type="text" id="lname" name="density" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Density:</label> </div> <input type="text" id="lname" name="density" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="fname">Fixed acidity:</label></div>  <input type="text" id="fname" name="fixed_acidity" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Fixed acidity:</label></div>  <input type="text" id="fname" name="fixed_acidity" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Free sulfur dioxide:</label> </div> <input type="text" id="lname" name="free_sulfur_dioxide" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Free sulfur dioxide:</label> </div> <input type="text" id="lname" name="free_sulfur_dioxide" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">pH:</label> </div> <input type="text" id="lname" name="pH" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">pH:</label> </div> <input type="text" id="lname" name="pH" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Residual sugar:</label> </div> <input type="text" id="lname" name="residual_sugar" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Residual sugar:</label> </div> <input type="text" id="lname" name="residual_sugar" required><br><br>
         
-  <div class="col-md-4 col-sm-4"><label for="lname">Sulphates:</label> </div> <input type="text" id="lname" name="sulphates" value=><br><br>
+  <div class="col-md-4 col-sm-4"><label for="lname">Sulphates:</label> </div> <input type="text" id="lname" name="sulphates" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Total sulfur dioxide:</label> </div> <input type="text" id="lname" name="total_sulfur_dioxide" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Total sulfur dioxide:</label> </div> <input type="text" id="lname" name="total_sulfur_dioxide" required><br><br>
         
- <div class="col-md-4 col-sm-4"><label for="lname">Volatile acidity:</label> </div> <input type="text" id="lname" name="volatile_acidity" value=><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Volatile acidity:</label> </div> <input type="text" id="lname" name="volatile_acidity" required><br><br>
         
         
  <br>
 {%  if scoreval  %}
  <h1>Wine is of <span style="color:red;">{{scoreval}}</span> Quality</h1>
  {% else%}
- <input type="submit" value="Submit" ></div>
+ <div class="col-md-4 col-sm-4"></div><input type="submit" value="Submit" ></div>
  {% endif %}
     
 {% endblock %}
@@ -199,11 +199,11 @@
                               <div class="col-md-4 col-sm-4">
                                    <input type="email" class="form-control" placeholder="Email address" name="email" required>
                               </div>
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="8" placeholder="Your message" name="message" required></textarea>
                               <div class="col-md-4 col-sm-4">
                                    <input type="submit" class="form-control" name="message" value="Send Message">
                               </div>
-                              <div class="col-md-12 col-sm-12">
-                                   <textarea class="form-control" rows="8" placeholder="Your message" name="message" required></textarea>
                               </div>
                          </form>
                     </div>
