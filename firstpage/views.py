@@ -1,13 +1,39 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
+from django.core.mail import send_mail
+import smtplib
+import joblib
 import pandas as pd
 # Create your views here.
-import joblib
+
+
 
 reloadModel=joblib.load('./models/RFModelforMPG.pkl')
 
+
+SMTP_HOST = settings.EMAIL_HOST
+SMTP_PORT = settings.EMAIL_PORT
+
+def send_email(from_addr, to_addr, subject, message , name):
+    msg = f'Sender Mail- {from_addr} \nSubject- {subject} \nFrom- {name}\n\n\n{message}'
+    with smtplib.SMTP(host=SMTP_HOST, port=SMTP_PORT) as server:
+        server.starttls()
+        server.login(settings.EMAIL_HOST_USER2, settings.EMAIL_HOST_PASSWORD)
+        server.sendmail(from_addr, to_addr, msg)
+
+
 def index(request):
-    return render(request,'index.html',)
+    if request.method== 'POST':
+        message = request.POST.get('message')
+        mail = request.POST.get('email')
+        name = request.POST.get('name')
+        send_email(mail ,settings.EMAIL_HOST_USER,settings.EMAIL_SUBJECT ,message , name)
+
+
+    return render(request,'index.html')
+
+
 
 def Prediction(request):
     context={'a':'Prediction'}
@@ -36,6 +62,9 @@ def Prediction(request):
     context={'scoreval':scoreval}
     return render(request,'index.html',context)
 
+
+
 def handler404(request,*args,**argv):
     return render(request,'404.html')
+
 
