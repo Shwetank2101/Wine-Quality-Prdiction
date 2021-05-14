@@ -1,4 +1,7 @@
 # Wine Quality Prediction
+[Website of our project](https://wine-quality-prdiction.herokuapp.com/)
+
+
 ![Image](https://github.com/Shwetank2101/Wine-Quality-Prdiction/blob/master/static/images/wine.jpg)
 
 Our main objective is to predict the wine quality using machine learning through Python programming language.
@@ -76,5 +79,4 @@ In this work, machine learning techniques are used to determine dependency of wi
 Shwetank Dixit
 
 Srishti Rastogi
-
 
