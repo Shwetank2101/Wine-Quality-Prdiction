@@ -15,7 +15,7 @@ scipy==1.5.4
 six==1.16.0
 sklearn==0.0
 sklearn-pandas==2.2.0
-sqlparse==0.4.1
+sqlparse==0.4.2
 threadpoolctl==2.1.0
 typing-extensions==3.10.0.0
 whitenoise==5.2.0
