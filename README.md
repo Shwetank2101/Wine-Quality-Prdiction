@@ -1,4 +1,4 @@
-# Wine Quality Prediction
+# Wine Quality Prediction -
 [Website of our project](https://wine-quality-prdiction.herokuapp.com/)
 
 
@@ -12,7 +12,7 @@ We have to create a beautiful interface for interaction between the user and our
 It can support the wine expert evaluations and ultimately improve the production.
 
 
-## Dataset Description
+## Dataset Description -
 
 We have taken our datasets from UCI Machine learning Repository. 
 Two datasets are included, related to red and white vinho verde wine samples, from the north of Portugal.
@@ -30,7 +30,7 @@ White wine consists of 4898 samples and red wine contains 1599 samples. Each sam
 11. Alcohol 
 12. Quality
 
-## Technology Used
+## Technologies Used -
 1. Python programming Language
 2. Advanced Python libraries:
 
@@ -44,7 +44,7 @@ White wine consists of 4898 samples and red wine contains 1599 samples. Each sam
 5. HTML
 6. CSS
 
-## Methodology
+## Methodology -
 
 We have followed a step by step procedure for the analysis of our dataset. We have undertaken the following steps while performing data analysis:
 
@@ -53,7 +53,7 @@ We have followed a step by step procedure for the analysis of our dataset. We ha
 3. Applying Machine Learning Algorithms
 4. Building an Interface using Django
 
-## Results 
+## Results -
 
 Accuracy from Decision Tree Classifier is 73.74 %
 
@@ -71,11 +71,11 @@ Accuracy from K-Nearest Neighbours is 78.06 %
 
 Accuracy from Support Vector Machine algorithm is 70.36 %
 
-## Conclusion
+## Conclusion -
 Both red and white wine dataset consists of 12 physicochemical characteristics. One (quality) is dependent variable and the other 11 are predictors. The experiments show that the value of the dependent variable can be predicted more accurately if only important features are considered in prediction rather than considering all features.
 In this work, machine learning techniques are used to determine dependency of wine quality on other variables and  in  wine  quality predictions. We have analysed that there are some variables which have a strong effect on our output variables and they are: alcohol, density, volatile acidity. There are also variables which affect these variables and they are chloride, residual sugar, volatile aciditfy, Sulphide oxide. After applying all the Machine Learning Algorithms, we have realised that Gradient Boosting Algorithm gives the best result in terms of accuracy of 80.64 %.
 
-## Developers
+## Developers -
 Shwetank Dixit
 
 Srishti Rastogi
